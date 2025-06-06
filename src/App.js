@@ -4,6 +4,7 @@ export default function App() {
   return (
     <div className="App">
       <FlashCards />
+      <Footer />
     </div>
   );
 }
@@ -87,9 +88,14 @@ function FlashCards() {
         <img
           src={imgSelected}
           alt="pic"
-          className={imgSelected === null ? "none-picture" : "picture"}
+          className={imgSelected === null ? "nonePicture" : "picture"}
         ></img>
       </div>
     </>
+  );
+}
+function Footer() {
+  return (
+    <footer className="footerPage">Được tạo bởi Esp - ngày 07/06/2025</footer>
   );
 }
